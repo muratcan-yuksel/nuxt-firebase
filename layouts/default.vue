@@ -6,8 +6,8 @@
       </v-container>
     </v-main>
 
-    <script>
+    <!-- <script>
       export default {};
-    </script>
+    </script> -->
   </v-app></template
 >
