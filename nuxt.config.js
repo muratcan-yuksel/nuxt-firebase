@@ -40,7 +40,30 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    [
+      "@nuxtjs/firebase",
+      {
+        config: {
+          apiKey: "AIzaSyAk98NIrSQzg4C26EDvIZZagDq1mHYSfk8",
+          authDomain: "nuxt-auth-67677.firebaseapp.com",
+          projectId: "nuxt-auth-67677",
+          storageBucket: "nuxt-auth-67677.appspot.com",
+          messagingSenderId: "934682439134",
+          appId: "1:934682439134:web:c374e883c59e5c718a014f"
+        },
+        services: {
+          auth: {
+            persistence: "local", // default
+            initialize: {
+              onAuthStateChangedAction: "onAuthStateChangedAction",
+              subscribeManually: false
+            },
+            ssr: false // default
+          }
+        }
+      }
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
