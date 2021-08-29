@@ -35,7 +35,9 @@ export default {
     "@nuxtjs/vuetify"
   ],
   router: {
-    middleware: ["auth"]
+    middleware: ["auth"],
+
+    base: "/muratcan-yuksel/"
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
