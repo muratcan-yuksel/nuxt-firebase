@@ -34,6 +34,9 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify"
   ],
+  router: {
+    middleware: ["auth"]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -80,7 +83,7 @@ export default {
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
